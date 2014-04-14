@@ -1,0 +1,3 @@
+[submodule "modules/puppet-config"]
+	path = modules/puppet-config
+	url = https://github.com/dsi-infrastructure/puppet-config.git
