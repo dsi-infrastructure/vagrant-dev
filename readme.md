@@ -17,8 +17,8 @@ Ce système a été testé sur les environnements Ubuntu 12.04, MacOs X Maverick
 On récupère l'ensemble du projet, ainsi que les modules puppet :
 
 ```bash
-git clone http://gitlab.gov.pf/dsi-infrastructure/vagrant-infrastructure.git
-cd vagrant-infrastructure
+git clone https://github.com/dsi-infrastructure/vagrant-dev.git
+cd vagrant-dev
 git submodule init
 git submodule sync
 git submodule update
