@@ -1,0 +1,10 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: /etc/puppet/hieradata
+:hierarchy:
+  - accounting
+  - "fic/%{fqdn}"
+  - "%{calling_module}/%{fqdn}"
+  - "%{calling_module}/common"
