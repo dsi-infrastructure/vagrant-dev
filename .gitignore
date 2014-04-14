@@ -1,2 +1,3 @@
 .vagrant
+boxes
 hieradata/accounting.yaml
