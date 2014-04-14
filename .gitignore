@@ -1,5 +1,6 @@
 .vagrant
 boxes
 modules
+manifests
 hieradata/accounting.yaml
 *.pyc
