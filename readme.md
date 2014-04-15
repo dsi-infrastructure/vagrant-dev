@@ -42,5 +42,14 @@ vagrant provision
 
 Remarque : les modules puppets sont des projets à part entière et donc, la définition des dépôts GIT est spécifiques à chaques modules.
 
+### Fabric
 
+Utilisation du module fabric :
+
+```bash
+fab request:fqdn -u login
+fab sign:fqdn -u login
+fab restart -u login
+```
+Remarque : utilisez votre login personnel pour vous connecter. Vous pouvez ommetre le paramètre si vous utilisez le même compte au niveau de votre session.
 

@@ -1,7 +1,16 @@
 from fabric.api import *
 
-env.hosts = ['vagrant@10.0.2.15']
+env.hosts = ['andrew']
 
 def deploy():
     with cd("/tmp/"):
-        run("git clone https://github.com/dsi-infrastructure/puppet-config.git config")
+        sudo("mkdir test")
+
+def request(hostname):
+    sudo("puppet cert list --all | grep %s" %hostname)
+
+def sign(hostname):
+    sudo("puppet cert sign %s" % hostname)
+
+def restart():
+    sudo("service apache2 restart")
